@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Layout Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        header{
+            position: sticky;
+            top: 0px;
+            background-color: rgb(230, 131, 230);
+            padding: 10px;
+        }
+        ul li{
+            list-style: none;
+            
+            display: inline;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        section{
+            padding: 40px;
+            background-color: green;
+        }
+        .box1{
+            background-color: pink;
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            /* padding: 10px 50px; */
+            /* margin: 40px; */
+            /* position: absolute; */
+        }
+        .box2{
+            background-color: paleturquoise;
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            /* position: relative; */
+            left: 10px;
+
+        }
+        article{
+            background-color: black;
+            padding: 0 50px 200px 50px;
+        }
+        h1{
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 200px;
+            padding: 60px;
+            /* margin: 10px; */
+            color: white;
+           
+        }
+
+        .foot{
+            background-color: darkgrey;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </section>
+    <article>
+        <h1>Welcome to Sigma Web Development Express</h1>
+    </article>
+    <footer>
+        <div class="foot"> &copy Code with Harry</div>
+    </footer>
+</body>
+</html>
