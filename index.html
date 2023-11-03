@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 5 - Layout Design</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-           
         }
-        header{
+
+        header {
             position: sticky;
             top: 0px;
             background-color: rgb(230, 131, 230);
-            padding: 10px;
+            padding: 20px;
         }
-        ul li{
+
+        ul li {
             list-style: none;
-            
             display: inline;
             padding: 10px;
         }
-        a{
+
+        a {
             text-decoration: none;
+            font-size: larger;
         }
-        section{
+
+        section {
             padding: 40px;
             background-color: green;
+            display: flex;
         }
-        .box1{
+        #first{
+            display: inline-block;
+        }
+        .box1 {
+            text-align: center;
             background-color: pink;
-            width: 300px;
-            height: 200px;
+            width: 60vw;
+            height: 40vw;
             margin: 10px;
         }
-        .box2{
+
+        .box2 {
+            text-align: center;
             background-color: paleturquoise;
-            width: 300px;
-            height: 200px;
+            width: 60vw;
+            height: 40vw;
             margin: 10px;
             left: 10px;
-
         }
-        article{
+
+        article {
             background-color: black;
             padding: 0 50px 200px 50px;
         }
-        h1{
+
+        h1 {
             text-align: center;
             border: 1px solid white;
             border-radius: 200px;
             padding: 60px;
             color: white;
-           
         }
 
-        .foot{
+        .foot {
             background-color: darkgrey;
             padding: 20px;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Contact</a></li>
-            </ul>
-        </nav>
+
+        <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+
     </header>
     <section>
-        <div class="container">
-            <div class="box1"></div>
-            <div class="box2"></div>
-        </div>
+        <div class="box1" id="first">This is Box-1</div>
+        <div class="box2">This is Box-2</div>
     </section>
     <article>
         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium sunt,</h1>
@@ -86,4 +96,5 @@
         <div class="foot"> &copy Lorem ipsum dolor sit amet.</div>
     </footer>
 </body>
+
 </html>
